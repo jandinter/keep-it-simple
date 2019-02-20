@@ -1,0 +1,12 @@
+source: _src
+destination: _site
+
+timezone: Europe/Berlin
+encoding: UTF-8
+
+title: Simple contract
+description: ""
+url: "https://simple_contracts.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+markdown: kramdown

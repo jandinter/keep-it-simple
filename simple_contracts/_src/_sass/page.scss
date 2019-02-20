@@ -1,0 +1,67 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.75rem;
+}
+
+.header-container,
+nav,
+main,
+.footer-container {
+  max-width: 880px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  box-shadow: 0 0 12px 3px rgba(20, 20, 20, 0.12);
+  padding: 1rem 0 0.75rem;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: $info;
+}
+
+footer {
+  margin-top: 3rem;
+  padding: 1.5rem 0;
+  border-top: 0.6px solid $grey-lighter;
+}
+
+.warning-container {
+  display: none;
+}
+
+.warning {
+  background: $warning;
+  border-radius: 6px;
+  padding: 1rem;
+  margin: 0.75rem 0 1.5rem;
+  display: flex;
+  align-content: center;
+
+  .warning__icon {
+    font-size: 3rem;
+    line-height: 1;
+    padding-right: 1.5rem;
+  }
+}
+
+.explanation-container {
+  background: $grey-lighter;
+  border-radius: 6px;
+  padding: 1rem 1rem 0.25rem 1rem;
+
+  .explanation {
+    max-width: 480px;
+
+    h5 {
+      font-weight: 600;
+      font-size: $size-4;
+    }
+  }
+}
