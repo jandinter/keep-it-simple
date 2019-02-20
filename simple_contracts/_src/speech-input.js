@@ -3,7 +3,10 @@
 	'use strict';
 
 	// check for support (webkit only)
-	if (!('webkitSpeechRecognition' in window)) return;
+	if (!('webkitSpeechRecognition' in window)) {
+		document.querySelector('.warning-container').classList.add('show');
+		return;
+	};
 
 	var talkMsg = 'Speak now';
 	// seconds to wait for more input after last
@@ -119,10 +122,10 @@
 			recognition.start();
 		}, false);
 
-		inputEl.addEventListener('change', function(event) {
+		inputEl.addEventListener('input', function(event) {
 			console.log("Los");
-			textIndicator.content = inputEl.content.size;
-		}, false);
+			// textIndicator.content = inputEl.content.size;
+		});
 
 	});
 })();

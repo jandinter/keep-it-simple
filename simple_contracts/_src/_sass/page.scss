@@ -24,6 +24,11 @@ header {
   font-size: 2rem;
   font-weight: 700;
   color: $info;
+
+  .logo {
+    height: 2rem;
+    width: auto;
+  }
 }
 
 footer {
@@ -34,6 +39,10 @@ footer {
 
 .warning-container {
   display: none;
+
+  &.show {
+    display: block;
+  }
 }
 
 .warning {
