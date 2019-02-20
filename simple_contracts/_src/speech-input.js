@@ -122,7 +122,7 @@
 			recognition.start();
 		}, false);
 
-		inputEl.addEventListener('input', function(event) {
+		inputEl.addEventListener('change', function(event) {
 			console.log("Los");
 			// textIndicator.content = inputEl.content.size;
 		});
