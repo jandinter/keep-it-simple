@@ -7,63 +7,20 @@
 
 	var talkMsg = 'Speak now';
 	// seconds to wait for more input after last
-  	var defaultPatienceThreshold = 6;
+  	var patience = 3;
 
 	function capitalize(str) {
 		return str.charAt(0).toUpperCase() + str.slice(1);
 	}
 
-	var inputEls = document.getElementsByClassName('speech-input');
+	var formBlocks = document.getElementsByClassName('form-wrapper');
 
-	[].forEach.call(inputEls, function(inputEl) {
-		var patience = parseInt(inputEl.dataset.patience, 10) || defaultPatienceThreshold;
-		var micBtn, micIcon, holderIcon, newWrapper;
+	[].forEach.call(formBlocks, function(formBlock) {
+		console.log(formBlock);
+		var inputEl = formBlock.querySelector('.speech-input');
+		var micBtn = formBlock.querySelector('.microphone-button');
+		var textIndicator = formBlock.querySelector('.text-indicator');
 		var shouldCapitalize = true;
-
-		// gather inputEl data
-		var nextNode = inputEl.nextSibling;
-		var parent = inputEl.parentNode;
-		var inputRightBorder = parseInt(getComputedStyle(inputEl).borderRightWidth, 10);
-		var buttonSize = 0.8 * (inputEl.dataset.buttonsize || inputEl.offsetHeight);
-
-		// default max size for textareas
-		if (!inputEl.dataset.buttonsize && inputEl.tagName === 'TEXTAREA' && buttonSize > 26) {
-			buttonSize = 26;
-		}
-
-		// create wrapper if not present
-		var wrapper = inputEl.parentNode;
-		if (!wrapper.classList.contains('si-wrapper')) {
-			wrapper = document.createElement('div');
-			wrapper.classList.add('si-wrapper');
-			wrapper.appendChild(parent.removeChild(inputEl));
-			newWrapper = true;
-		}
-
-		// create mic button if not present
-		micBtn = wrapper.querySelector('.si-btn');
-		if (!micBtn) {
-			micBtn = document.createElement('button');
-			micBtn.type = 'button';
-			micBtn.classList.add('si-btn');
-			micBtn.textContent = 'speech input';
-			micIcon = document.createElement('span');
-			holderIcon = document.createElement('span');
-			micIcon.classList.add('si-mic');
-			holderIcon.classList.add('si-holder');
-			micBtn.appendChild(micIcon);
-			micBtn.appendChild(holderIcon);
-			wrapper.appendChild(micBtn);
-
-			// size and position mic and input
-			micBtn.style.cursor = 'pointer';
-			micBtn.style.top = 0.125 * buttonSize + 'px';
-			micBtn.style.height = micBtn.style.width = buttonSize + 'px';
-			inputEl.style.paddingRight = buttonSize - inputRightBorder + 'px';
-		}
-
-		// append wrapper where input was
-		if (newWrapper) parent.insertBefore(wrapper, nextNode);
 
 		// setup recognition
 		var prefix = '';
@@ -99,11 +56,7 @@
 			micBtn.classList.remove('listening');
 			if (oldPlaceholder !== null) inputEl.placeholder = oldPlaceholder;
 
-			// If the <input> has data-instant-submit and a value,
-			if (inputEl.dataset.instantSubmit !== undefined && inputEl.value) {
-				// submit the form it's in (if it is in one).
-				if (inputEl.form) inputEl.form.submit();
-			}
+			inputEl.disabled = false;
 		};
 
 		recognition.onresult = function(event) {
@@ -136,7 +89,7 @@
 			inputEl.value = prefix + transcript;
 
 			// set cursur and scroll to end
-			inputEl.focus();
+			// inputEl.focus();
 			if (inputEl.tagName === 'INPUT') {
 				inputEl.scrollLeft = inputEl.scrollWidth;
 			} else {
@@ -165,5 +118,11 @@
 			// restart recognition
 			recognition.start();
 		}, false);
+
+		inputEl.addEventListener('change', function(event) {
+			console.log("Los");
+			textIndicator.content = inputEl.content.size;
+		}, false);
+
 	});
 })();

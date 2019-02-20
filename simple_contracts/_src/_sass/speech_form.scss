@@ -14,19 +14,21 @@
   background: linear-gradient(120deg, $blue, $turquoise);
   margin-right: 1.5rem;
 
-  &::before {
-    content: "";
-    border-top: 2px solid $blue;
-    border-bottom: 2px solid $turquoise;
-    border-radius: 50%;
-    animation: MicrophoneActive 2s linear infinite;
-    z-index: 100;
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    box-sizing: border-box;
+  &.listening {
+    &::before {
+      content: "";
+      border-top: 2px solid $blue;
+      border-bottom: 2px solid $turquoise;
+      border-radius: 50%;
+      animation: MicrophoneActive 2s linear infinite;
+      z-index: 100;
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      box-sizing: border-box;
+    }
   }
 }
 
@@ -50,5 +52,9 @@
     padding: 0.5rem;
     font-size: 1rem;
     line-height: 1.2;
+
+    &:disabled {
+      background: inherit;
+    }
   }
 }
