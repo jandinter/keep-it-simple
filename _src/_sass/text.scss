@@ -1,10 +1,31 @@
 .text-container {
   margin: 1.5rem 0;
+
+  .text-columns {
+    display: flex;
+    margin-bottom: 3rem;
+  }
+
+  .left-column {
+    flex: 1 1 auto;
+    max-width: ($width-of-page / 5) * 3;
+    padding-right: 3rem;
+  }
+
+  .right-column {
+    flex: 1 2 auto;
+    max-width: ($width-of-page / 5) * 2;
+  }
+
+  .small {
+    font-size: $size-7;
+    color: $grey-lighter;
+  }
 }
 
 .text-container__header {
   padding: 0.75rem 0;
   font-weight: 600;
-  color: $info;
+  color: $blue;
   font-size: $size-5;
 }
