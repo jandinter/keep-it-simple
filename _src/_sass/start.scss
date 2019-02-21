@@ -1,0 +1,33 @@
+body.start-page {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+div.start-page {
+  font-size: 90px;
+  color: $blue;
+  text-align: center;
+  font-weight: 700;
+
+  .logo {
+    height: 90px;
+    width: auto;
+  }
+
+  .tld {
+    color: $red;
+  }
+
+  .protocol {
+    color: $grey-lighter;
+  }
+
+  .separator {
+    display: inline-block;
+    width: 0.2em;
+  }
+}

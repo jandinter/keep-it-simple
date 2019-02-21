@@ -2948,6 +2948,9 @@ h5,
 h6 {
   margin-bottom: 0.75rem; }
 
+html {
+  overflow-y: auto; }
+
 body {
   scroll-behavior: smooth; }
 
@@ -3127,3 +3130,27 @@ footer {
   font-weight: 600;
   color: #0048ff;
   font-size: 1.25rem; }
+
+body.start-page {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden; }
+
+div.start-page {
+  font-size: 90px;
+  color: #0048ff;
+  text-align: center;
+  font-weight: 700; }
+  div.start-page .logo {
+    height: 90px;
+    width: auto; }
+  div.start-page .tld {
+    color: #ff3860; }
+  div.start-page .protocol {
+    color: #dbdbdb; }
+  div.start-page .separator {
+    display: inline-block;
+    width: 0.2em; }
