@@ -13,6 +13,11 @@ div.start-page {
   text-align: center;
   font-weight: 700;
 
+  a,
+  a:hover {
+    color: $blue;
+  }
+
   .logo {
     height: 90px;
     width: auto;

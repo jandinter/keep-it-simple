@@ -3144,6 +3144,9 @@ div.start-page {
   color: #0048ff;
   text-align: center;
   font-weight: 700; }
+  div.start-page a,
+  div.start-page a:hover {
+    color: #0048ff; }
   div.start-page .logo {
     height: 90px;
     width: auto; }
