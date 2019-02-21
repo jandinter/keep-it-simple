@@ -1,3 +1,20 @@
+@font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url("/assets/fonts/Inter-upright.var.woff2") format("woff2 supports variations(gvar)"), url("/assets/fonts/Inter-upright.var.woff2") format("woff2-variations"), url("/assets/fonts/Inter-upright.var.woff2") format("woff2"); }
+@font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-style: italic;
+  font-named-instance: 'Italic';
+  src: url("/assets/fonts/Inter-italic.var.woff2") format("woff2 supports variations(gvar)"), url("/assets/fonts/Inter-italic.var.woff2") format("woff2-variations"), url("/assets/fonts/Inter-italic.var.woff2") format("woff2"); }
+@font-face {
+  font-family: 'Inter var experimental';
+  font-weight: 100 900;
+  font-style: oblique 0deg 10deg;
+  src: url("Inter.var.woff2") format("woff2-variations"), url("Inter.var.woff2") format("woff2"); }
 @keyframes spinAround {
   from {
     transform: rotate(0deg); }
@@ -174,7 +191,7 @@ button,
 input,
 select,
 textarea {
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+  font-family: BlinkMacSystemFont, -apple-system, "Inter var", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
 
 code,
 pre {
@@ -705,13 +722,13 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   font-weight: 700 !important; }
 
 .is-family-primary {
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important; }
+  font-family: BlinkMacSystemFont, -apple-system, "Inter var", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important; }
 
 .is-family-secondary {
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important; }
+  font-family: BlinkMacSystemFont, -apple-system, "Inter var", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important; }
 
 .is-family-sans-serif {
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important; }
+  font-family: BlinkMacSystemFont, -apple-system, "Inter var", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important; }
 
 .is-family-monospace {
   font-family: monospace !important; }
@@ -3001,7 +3018,7 @@ footer {
     line-height: 1.3;
     font-weight: 700;
     max-width: 750px;
-    margin-bottom: 6rem; }
+    margin-bottom: 9rem; }
   .hero-section .try-now {
     position: absolute;
     right: 0;

@@ -1,5 +1,33 @@
 $width-of-page: 960px;
 
+@font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url("/assets/fonts/Inter-upright.var.woff2") format("woff2 supports variations(gvar)"),
+       url("/assets/fonts/Inter-upright.var.woff2") format("woff2-variations"),
+       url("/assets/fonts/Inter-upright.var.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-style: italic;
+  font-named-instance: 'Italic';
+  src: url("/assets/fonts/Inter-italic.var.woff2") format("woff2 supports variations(gvar)"),
+       url("/assets/fonts/Inter-italic.var.woff2") format("woff2-variations"),
+       url("/assets/fonts/Inter-italic.var.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Inter var experimental';
+  font-weight: 100 900;
+  font-style: oblique 0deg 10deg;
+  src: url("Inter.var.woff2") format("woff2-variations"),
+       url("Inter.var.woff2") format("woff2");
+}
+
 @import "utilities/_all";
 @import "base/_all";
 @import "elements/form";
