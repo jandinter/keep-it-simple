@@ -189,7 +189,7 @@ body {
   line-height: 1.5; }
 
 a {
-  color: #3273dc;
+  color: #0048ff;
   cursor: pointer;
   text-decoration: none; }
   a strong {
@@ -594,13 +594,13 @@ a.has-text-primary:hover, a.has-text-primary:focus {
   background-color: #00d1b2 !important; }
 
 .has-text-link {
-  color: #3273dc !important; }
+  color: #0048ff !important; }
 
 a.has-text-link:hover, a.has-text-link:focus {
-  color: #205bbc !important; }
+  color: #003acc !important; }
 
 .has-background-link {
-  background-color: #3273dc !important; }
+  background-color: #0048ff !important; }
 
 .has-text-info {
   color: #209cee !important; }
@@ -979,8 +979,8 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   .textarea.is-focused,
   .textarea:active,
   .textarea.is-active {
-    border-color: #3273dc;
-    box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25); }
+    border-color: #0048ff;
+    box-shadow: 0 0 0 0.125em rgba(0, 72, 255, 0.25); }
   .input[disabled], fieldset[disabled] .input,
   .textarea[disabled],
   fieldset[disabled] .textarea {
@@ -1027,9 +1027,9 @@ a.has-text-danger:hover, a.has-text-danger:focus {
     .input.is-primary:focus, .input.is-primary.is-focused, .input.is-primary:active, .input.is-primary.is-active, .textarea.is-primary:focus, .textarea.is-primary.is-focused, .textarea.is-primary:active, .textarea.is-primary.is-active {
       box-shadow: 0 0 0 0.125em rgba(0, 209, 178, 0.25); }
   .input.is-link, .textarea.is-link {
-    border-color: #3273dc; }
+    border-color: #0048ff; }
     .input.is-link:focus, .input.is-link.is-focused, .input.is-link:active, .input.is-link.is-active, .textarea.is-link:focus, .textarea.is-link.is-focused, .textarea.is-link:active, .textarea.is-link.is-active {
-      box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25); }
+      box-shadow: 0 0 0 0.125em rgba(0, 72, 255, 0.25); }
   .input.is-info, .textarea.is-info {
     border-color: #209cee; }
     .input.is-info:focus, .input.is-info.is-focused, .input.is-info:active, .input.is-info.is-active, .textarea.is-info:focus, .textarea.is-info.is-focused, .textarea.is-info:active, .textarea.is-info.is-active {
@@ -1113,7 +1113,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   .select:not(.is-multiple) {
     height: 2.25em; }
   .select:not(.is-multiple):not(.is-loading)::after {
-    border-color: #3273dc;
+    border-color: #0048ff;
     right: 1.125em;
     z-index: 4; }
   .select.is-rounded select {
@@ -1139,8 +1139,8 @@ a.has-text-danger:hover, a.has-text-danger:focus {
     .select select:hover, .select select.is-hovered {
       border-color: #b5b5b5; }
     .select select:focus, .select select.is-focused, .select select:active, .select select.is-active {
-      border-color: #3273dc;
-      box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25); }
+      border-color: #0048ff;
+      box-shadow: 0 0 0 0.125em rgba(0, 72, 255, 0.25); }
     .select select[disabled], fieldset[disabled] .select select {
       background-color: whitesmoke;
       border-color: whitesmoke;
@@ -1208,13 +1208,13 @@ a.has-text-danger:hover, a.has-text-danger:focus {
     .select.is-primary select:focus, .select.is-primary select.is-focused, .select.is-primary select:active, .select.is-primary select.is-active {
       box-shadow: 0 0 0 0.125em rgba(0, 209, 178, 0.25); }
   .select.is-link:not(:hover)::after {
-    border-color: #3273dc; }
+    border-color: #0048ff; }
   .select.is-link select {
-    border-color: #3273dc; }
+    border-color: #0048ff; }
     .select.is-link select:hover, .select.is-link select.is-hovered {
-      border-color: #2366d1; }
+      border-color: #0041e6; }
     .select.is-link select:focus, .select.is-link select.is-focused, .select.is-link select:active, .select.is-link select.is-active {
-      box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25); }
+      box-shadow: 0 0 0 0.125em rgba(0, 72, 255, 0.25); }
   .select.is-info:not(:hover)::after {
     border-color: #209cee; }
   .select.is-info select {
@@ -1359,19 +1359,19 @@ a.has-text-danger:hover, a.has-text-danger:focus {
     border-color: transparent;
     color: #fff; }
   .file.is-link .file-cta {
-    background-color: #3273dc;
+    background-color: #0048ff;
     border-color: transparent;
     color: #fff; }
   .file.is-link:hover .file-cta, .file.is-link.is-hovered .file-cta {
-    background-color: #276cda;
+    background-color: #0045f2;
     border-color: transparent;
     color: #fff; }
   .file.is-link:focus .file-cta, .file.is-link.is-focused .file-cta {
     border-color: transparent;
-    box-shadow: 0 0 0.5em rgba(50, 115, 220, 0.25);
+    box-shadow: 0 0 0.5em rgba(0, 72, 255, 0.25);
     color: #fff; }
   .file.is-link:active .file-cta, .file.is-link.is-active .file-cta {
-    background-color: #2366d1;
+    background-color: #0041e6;
     border-color: transparent;
     color: #fff; }
   .file.is-info .file-cta {
@@ -1587,7 +1587,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   .help.is-primary {
     color: #00d1b2; }
   .help.is-link {
-    color: #3273dc; }
+    color: #0048ff; }
   .help.is-info {
     color: #209cee; }
   .help.is-success {
@@ -2948,7 +2948,7 @@ header {
   font-size: 2rem;
   font-weight: 700;
   color: white;
-  background: #3273dc; }
+  background: #0048ff; }
   header .logo {
     height: 2rem;
     width: auto; }
@@ -2986,7 +2986,7 @@ footer {
       font-size: 1.5rem; }
 
 .hero {
-  background: #3273dc; }
+  background: #0048ff; }
 
 .hero-section {
   width: 100%;
@@ -3042,11 +3042,11 @@ footer {
   width: 3rem;
   height: 3rem;
   position: relative;
-  background: linear-gradient(120deg, #3273dc, #00d1b2);
+  background: linear-gradient(120deg, #0048ff, #00d1b2);
   margin-right: 1.5rem; }
   .microphone-button.listening::before {
     content: "";
-    border-top: 2px solid #3273dc;
+    border-top: 2px solid #0048ff;
     border-bottom: 2px solid #00d1b2;
     border-radius: 50%;
     animation: MicrophoneActive 2s linear infinite;
@@ -3089,7 +3089,7 @@ footer {
       background: inherit; }
 
 .text-container {
-  margin: 1.5rem 0; }
+  margin: 3rem 0 1.5rem; }
   .text-container .text-columns {
     display: flex;
     margin-bottom: 3rem; }
@@ -3107,5 +3107,5 @@ footer {
 .text-container__header {
   padding: 0.75rem 0;
   font-weight: 600;
-  color: #3273dc;
+  color: #0048ff;
   font-size: 1.25rem; }
