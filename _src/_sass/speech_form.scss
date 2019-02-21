@@ -13,6 +13,7 @@
   position: relative;
   background: linear-gradient(120deg, $blue, $turquoise);
   margin-right: 1.5rem;
+  cursor: pointer;
 
   &.listening {
     &::before {

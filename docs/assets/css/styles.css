@@ -3060,7 +3060,8 @@ footer {
   height: 3rem;
   position: relative;
   background: linear-gradient(120deg, #0048ff, #00d1b2);
-  margin-right: 1.5rem; }
+  margin-right: 1.5rem;
+  cursor: pointer; }
   .microphone-button.listening::before {
     content: "";
     border-top: 2px solid #0048ff;
