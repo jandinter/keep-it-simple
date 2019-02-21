@@ -1,10 +1,13 @@
+$width-of-page: 960px;
+
 @import "utilities/_all";
 @import "base/_all";
-@import "elements/_all";
+@import "elements/form";
 // @import "components/_all";
 @import "grid/_all";
 // @import "layout/_all";
 
 @import "page";
+@import "hero";
 @import "speech_form";
 @import "text";

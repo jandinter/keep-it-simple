@@ -1,0 +1,53 @@
+.hero {
+  background: $blue;
+}
+
+.hero-section {
+  width: 100%;
+  max-width: $width-of-page;
+  margin: 0 auto;
+  position: relative;
+  color: $white;
+  padding: 4.5rem 0;
+
+  .hero__title {
+    margin-right: 7.5rem;
+    font-size: 4.5rem;
+    line-height: 1.2;
+    font-weight: 700;
+    max-width: 750px;
+    margin-bottom: 4.5rem;
+  }
+
+  .try-now {
+    position: absolute;
+    right: 0;
+    top: 4.5rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background: linear-gradient($yellow, $red);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(15deg);
+    text-align: center;
+
+    a,
+    a:hover {
+      color: $text;
+      font-weight: 800;
+    }
+  }
+
+  .why-it-matters,
+  .how-it-works {
+    h5 {
+      font-size: $size-4;
+      font-weight: 600;
+      line-height: 1;
+      margin-bottom: 1.5rem;
+    }
+  }
+}

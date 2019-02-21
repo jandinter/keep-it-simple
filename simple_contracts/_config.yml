@@ -1,5 +1,5 @@
 source: _src
-destination: _site
+destination: docs
 
 timezone: Europe/Berlin
 encoding: UTF-8
