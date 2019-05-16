@@ -1,6 +1,4 @@
 .form-wrapper {
-  display: flex;
-  align-items: flex-start;
 }
 
 .microphone-button {
@@ -14,6 +12,9 @@
   background: linear-gradient(120deg, $blue, $turquoise);
   margin-right: 1.5rem;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &.listening {
     &::before {
@@ -43,6 +44,17 @@
       border-radius: 50%;
       z-index: 1000;
     }
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+    stroke: $white;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+    color: $white;
   }
 }
 

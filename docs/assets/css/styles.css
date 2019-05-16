@@ -3050,10 +3050,6 @@ footer {
     line-height: 1;
     margin-bottom: 1.5rem; }
 
-.form-wrapper {
-  display: flex;
-  align-items: flex-start; }
-
 .microphone-button {
   font-size: 2rem;
   line-height: 1;
@@ -3064,7 +3060,10 @@ footer {
   position: relative;
   background: linear-gradient(120deg, #0048ff, #00d1b2);
   margin-right: 1.5rem;
-  cursor: pointer; }
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
   .microphone-button.listening::before {
     content: "";
     border-top: 2px solid #0048ff;
@@ -3089,6 +3088,15 @@ footer {
     right: 0.05rem;
     border-radius: 50%;
     z-index: 1000; }
+  .microphone-button svg {
+    width: 24px;
+    height: 24px;
+    stroke: white;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+    color: white; }
 
 @keyframes MicrophoneActive {
   0% {
